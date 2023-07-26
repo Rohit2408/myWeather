@@ -1,0 +1,37 @@
+.landing-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 1.5s ease; 
+    background-image: url('C:/Users/monda/OneDrive/Documents/React/Project/myWeather/palle-knudsen-Bl61MZLv7x0-unsplash.jpg');
+  }
+  
+  .app-name {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .swipe-up {
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+  @keyframes swipeUpAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-25px);
+    }
+  }
+  
+  .swipe-up {
+    animation: swipeUpAnimation 1.5s infinite alternate;
+  }
+  
+  .show-background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
