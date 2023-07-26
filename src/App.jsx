@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,7 +12,7 @@ import './LandingPage.css';
 
 const App = () => {
   const [backgroundImage, setBackgroundImage] = useState('');
-  const [showLandingPage, setShowLandingPage] = useState(true); 
+  const [showLandingPage, setShowLandingPage] = useState(true);
   const dispatch = useDispatch();
   const weather = useSelector((state) => state.auth.weather);
 
@@ -28,11 +29,13 @@ const App = () => {
   };
 
   return (
-    <Router>
+    <Router basename="/myWeather">
       <div className={`app ${showLandingPage ? 'landing-page' : ''}`} onClick={handleSwipeUp}>
         {showLandingPage ? (
           <div className="landing-page-content">
-            <h1 className="app-name" style={{fontWeight: 'bold'}}>myWeather</h1>
+            <h1 className="app-name" style={{ fontWeight: 'bold' }}>
+              myWeather
+            </h1>
             <div className="swipe-up">Swipe up to continue</div>
           </div>
         ) : (
