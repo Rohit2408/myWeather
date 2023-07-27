@@ -37,7 +37,7 @@ My Weather App is a simple web application built with React that allows users to
 6. Open your browser and visit http://localhost:3000 to view the app.
 
 ## Technologies Used<br>
- -React
+ <br>-React
  -Redux
  -Firebase Authentication
  -OpenWeatherMap API
